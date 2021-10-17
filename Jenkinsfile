@@ -8,7 +8,8 @@ pipeline {
         }
         stage('test') {
             steps { 
-                cmd_exec('echo "Buils starting..."')
+                bat "run_build_windows.bat"
+                mvn test
             }
         }
         stage('package') {
@@ -16,10 +17,9 @@ pipeline {
                bat '''  ECHO Hello World  '''
                    
             }
-       def cmd_exec(command) {
-       return bat(returnStdout: true, script: "${command}").trim()
+     
         }
-    }
+    
 
     }
 }
