@@ -20,4 +20,6 @@ pipeline {
        return bat(returnStdout: true, script: "${command}").trim()
         }
     }
+
+    }
 }
