@@ -8,7 +8,7 @@ pipeline {
         }
         stage('test') {
             steps { 
-                bat '''  ECHO Hello World  '''
+                bat '''  mvn test  '''
             }
         }
         stage('package') {
