@@ -8,7 +8,7 @@ pipeline {
         }
         stage('test') {
             steps { 
-                bat '''  maven test  '''
+                cmd_exec('echo "Buils starting..."')
             }
         }
         stage('package') {
@@ -16,6 +16,8 @@ pipeline {
                bat '''  ECHO Hello World  '''
                    
             }
+       def cmd_exec(command) {
+       return bat(returnStdout: true, script: "${command}").trim()
         }
     }
 }
