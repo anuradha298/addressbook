@@ -11,7 +11,7 @@ pipeline {
         }
         stage('test') {
             steps { 
-                bat "run_build_windows.bat"
+              
                 bat "mvn test"
             }
         }
