@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools{
+         maven "M3"
+    }
     stages {
         stage('Compile') {
             steps { 
@@ -9,7 +12,7 @@ pipeline {
         stage('test') {
             steps { 
                 bat "run_build_windows.bat"
-                mvn test
+                bat "mvn test"
             }
         }
         stage('package') {
