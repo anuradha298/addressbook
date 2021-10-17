@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('Compile') {
             steps { 
-                echo "test"
+                bat '''  ECHO Hello World  '''
             }
         }
         stage('test') {
             steps { 
-                echo "test"
+                bat '''  ECHO Hello World  '''
             }
         }
         stage('package') {
             steps { 
-               echo "test"
+               bat '''  ECHO Hello World  '''
                    
             }
         }
