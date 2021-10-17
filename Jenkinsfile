@@ -13,8 +13,8 @@ pipeline {
         }
         stage('package') {
             steps { 
-               mvn package
-                   }
+               echo test
+                   
             }
         }
     }
