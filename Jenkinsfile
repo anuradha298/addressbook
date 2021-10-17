@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('Compile') {
             steps { 
-                cmd 'mvn compile'
+                maven compile
             }
         }
         stage('test') {
             steps { 
-                cmd 'mvn test'
+                maven test
             }
         }
         stage('package') {
             steps { 
-                cmd 'mvn package'
+                maven package
             }
         }
     }
