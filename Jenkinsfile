@@ -8,7 +8,7 @@ pipeline {
         }
         stage('test') {
             steps { 
-                bat '''  mvn test  '''
+                bat '''  maven test  '''
             }
         }
         stage('package') {
