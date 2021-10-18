@@ -9,8 +9,8 @@ pipeline {
         }
         stage('test') {
             steps { 
-                dir("C:\\users\\HP")
-                bat "mvn test"
+                dir("C:\\users\\HP"){
+                    bat "mvn test"}
             }
         }
         stage('package') {
