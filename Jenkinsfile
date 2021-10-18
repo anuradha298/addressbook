@@ -6,7 +6,7 @@ pipeline {
                 
                 bat '''  ECHO Hello World  '''
                 bat 'start cmd.exe'
-                bat ''' C://Users//HP//addressbook '''
+                bat ''' cd C://Users//HP//addressbook '''
                 bat  ''' echo hello8 '''
             }
         }
