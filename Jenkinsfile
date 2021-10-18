@@ -5,7 +5,7 @@ pipeline {
             steps { 
                 
                 bat '''  ECHO Hello World  '''
-                bat 'start cmd.exe /c C://Users//HP//addressbook'
+                bat 'start cmd.exe /c C://Users//HP//addressbook//mvn build'
                 bat  ''' echo hello8 '''
                 bat ''' mvn build '''
             }
