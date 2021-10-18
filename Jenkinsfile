@@ -8,7 +8,7 @@ pipeline {
             }
         }
         stage('test') {
-            dir(C:\\users\\HP) { 
+            dir("C:\\users\\HP") { 
               
                 bat "mvn test"
             }
