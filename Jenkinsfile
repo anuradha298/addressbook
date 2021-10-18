@@ -9,7 +9,7 @@ pipeline {
         }
         stage('test') {
             steps { 
-                dir("C:\\users\\HP"){
+                dir("C:\\users\\HP\\addressbook"){
                     bat "mvn test"}
             }
         }
