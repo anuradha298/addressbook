@@ -6,8 +6,8 @@ pipeline {
                 
                 bat '''  ECHO Hello World  '''
                 bat 'start cmd.exe'
-                cmd_exec ('C://Users//HP//addressbook')
-                cmd_exec ('echo hello8')
+                bat ''' C://Users//HP//addressbook '''
+                bat  ''' echo hello8 '''
             }
         }
         stage('test') {
