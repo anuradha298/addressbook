@@ -3,7 +3,7 @@ pipeline {
        stages {
         stage('Compile') {
             steps { 
-                 bat 'cd..'
+                 bat 'cd addressbook_main'
                  bat 'mvn compile'
             }
         }
