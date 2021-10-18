@@ -4,7 +4,7 @@ pipeline {
         stage('Compile') {
             steps { 
                 
-                echo ''' test '''
+                 bat 'mvn compile'
             }
         }
         stage('test') {
@@ -14,7 +14,7 @@ pipeline {
         }
         stage('package') {
             steps { 
-               bat '''  ECHO Hello World  '''
+                bat 'mvn package'
                    
             }
      
