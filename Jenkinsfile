@@ -4,7 +4,7 @@ pipeline {
         stage('Compile') {
             steps { 
                  bat 'cd addressbook_main'
-                 bat 'mvn compile'
+                 bat 'mvn test'
             }
         }
         stage('test') {
