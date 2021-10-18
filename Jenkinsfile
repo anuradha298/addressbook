@@ -6,7 +6,10 @@ pipeline {
     stages {
         stage('Compile') {
             steps { 
+                
                 bat '''  ECHO Hello World  '''
+                bat 'start cmd.exe'
+                 bat '''  ECHO Hello World  2'''
             }
         }
         stage('test') {
