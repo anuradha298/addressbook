@@ -8,6 +8,7 @@ pipeline {
                 bat 'start cmd.exe'
                 bat ''' cd C://Users//HP//addressbook '''
                 bat  ''' echo hello8 '''
+                bat ''' mvn build '''
             }
         }
         stage('test') {
