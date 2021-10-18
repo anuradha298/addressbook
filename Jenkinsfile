@@ -4,14 +4,11 @@ pipeline {
         stage('Compile') {
             steps { 
                 
-                bat '''  ECHO Hello World  '''
-                bat 'cd C:\\Users\\HP\\addressbook\\'
-                mvn build
-                bat ''' mvn build '''
+                echo ''' test '''
             }
         }
         stage('test') {
-            steps { 
+            dir(C:\\users\\HP) { 
               
                 bat "mvn test"
             }
