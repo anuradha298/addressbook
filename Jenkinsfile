@@ -3,18 +3,18 @@ pipeline {
        stages {
         stage('Compile') {
             steps { 
-                 bat 'cd addressbook_main'
-                 bat 'mvn test'
+               
+                 sh 'mvn test'
             }
         }
         stage('test') {
             steps { 
-                bat 'mvn test-compile'
+                sh 'mvn test-compile'
             }
         }
         stage('package') {
             steps { 
-                bat 'mvn package'
+                sh 'mvn package'
                    
             }
      
